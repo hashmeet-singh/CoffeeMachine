@@ -7,6 +7,12 @@ import model.Ingredient;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * IngredientsManager in a Singleton Class which manages all the ingredients in the coffee machine.
+ * It defines the strategy checkAndUpdateIngredients to check if all the ingredients are present for a beverage and
+ * updates the quantities of each ingredient if all are present with desired quantity
+ * It is synchronized to implement thread safety
+ */
 public class IngredientsManager {
     private Map<String, Ingredient> availableIngredients = new HashMap<>();
 

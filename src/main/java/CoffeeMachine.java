@@ -5,6 +5,11 @@ import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * Main Coffee Machine.
+ * This class is responsible for starting and stopping the machine and
+ * making the beverages.
+ */
 public class CoffeeMachine {
     private static CoffeeMachine coffeeMachine;
     private ExecutorService executorService;

@@ -27,7 +27,6 @@ public class CoffeeMachineTest {
 
     }
 
-
     private String readFile(String path) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(path));
         StringBuilder stringBuilder = new StringBuilder();

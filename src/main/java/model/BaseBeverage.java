@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+/**
+ * Concrete Beverage implementation
+ */
 public class BaseBeverage implements Beverage {
     private String name;
     Map<String, Integer> ingredients;

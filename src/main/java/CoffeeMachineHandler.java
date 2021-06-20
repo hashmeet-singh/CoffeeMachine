@@ -3,6 +3,9 @@ import model.Machine;
 
 import java.io.IOException;
 
+/**
+ * Parses the json request and passess the beverage request to coffee machine.
+ */
 public class CoffeeMachineHandler {
     private static CoffeeMachine coffeeMachine;
     private static CoffeeMachineHandler coffeeMachineHandler;

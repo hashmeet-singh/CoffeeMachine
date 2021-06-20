@@ -13,20 +13,16 @@ public class CoffeeMachineHandler {
         System.out.println("Starting machine");
         coffeeMachine = new CoffeeMachine(machine.getOutlet().getCount());
 
-        machine.getItems().entrySet().forEach(item -> {
-            coffeeMachine.addIngredient(item.getKey(), item.getValue(), 0, 1000);
-        });
+        machine.getItems().forEach((key, value) -> coffeeMachine.addIngredient(key, value, 0, 1000));
 
-        machine.getBeverages().entrySet().forEach(beverage -> {
-            coffeeMachine.makeBeverage(beverage.getKey(), beverage.getValue());
-        });
+        machine.getBeverages().forEach((key, value) -> coffeeMachine.makeBeverage(key, value));
     }
 
     public static void stopMachine() {
         coffeeMachine.stop();
     }
 
-    public Machine getMachine() {
+    public static Machine getMachine() {
         return machine;
     }
 
